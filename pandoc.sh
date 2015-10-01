@@ -19,6 +19,7 @@ read words filename <<< $(wc -w $1)
 standard=1170
 # Calculate percent complete of standard blog length.
 percent=`bc <<< "scale=2; ($words/$standard)*100"`
+percent=`bc <<< "scale=0; $percent/1"`
 progress=$percent
 # Output that percentage
 echo "$progress% completed."
