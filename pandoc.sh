@@ -8,6 +8,11 @@
 
 # TODO Add help and usage examples.
 
+if [ "$1" == "-h" ] || [ "$1" == "--h" ] || [ "$1" == "--help" ] ; then
+  echo "Usage: `basename $0` [-h] file.md"
+  exit 0
+fi
+
 # Read in filename, strip out the file extension for reuse in PanDoc.
 rootFN=`rev<<<$1 | cut -f2- -d. | rev $rootFN`
 # Output for proofing purposes.
