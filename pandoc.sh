@@ -34,8 +34,10 @@ echo "$progress% completed."
 pandoc $1 -o "$rootFN.html"
 ## docx for import to gDocs, email, etc.
 pandoc $1 -o "$rootFN.docx"
-## TODO Add PDF support, if possible.
+## Add PDF support.
+pandoc $1 -o "$rootFN.pdf"
 
 # Report back to user
 echo "$rootFN.html created."
 echo "$rootFN.docx created."
+echo "$rootFN.pdf created."
