@@ -30,12 +30,15 @@ progress=$percent
 echo "$progress% completed."
 
 # Conversion time!
+output=build
+## Create the output directory
+mkdir -p $output
 ## html for preview in browser
-pandoc $1 -o "$rootFN.html"
+pandoc $1 -o "$output/$rootFN.html"
 ## docx for import to gDocs, email, etc.
-pandoc $1 -o "$rootFN.docx"
+pandoc $1 -o "$output/$rootFN.docx"
 ## Add PDF support.
-pandoc $1 -o "$rootFN.pdf"
+pandoc $1 -o "$output/$rootFN.pdf"
 
 # Report back to user
 echo "$rootFN.html created."
