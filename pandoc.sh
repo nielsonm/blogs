@@ -6,10 +6,12 @@
 #               @oswebguy                #
 ##########################################
 
-# TODO Add help and usage examples.
+# Add help and usage examples.
 
 if [ "$1" == "-h" ] || [ "$1" == "--h" ] || [ "$1" == "--help" ] ; then
-  echo "Usage: `basename $0` [-h] file.md"
+  echo "Convert MarkDown file to previewable documents"
+  echo "using Pandoc to convert the files."
+  echo "Usage: `basename $0` file.md"
   exit 0
 fi
 
