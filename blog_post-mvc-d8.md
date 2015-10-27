@@ -1,7 +1,7 @@
 # MVC in Drupal 8: Getting closer
 ## What is MVC: the elevator pitch
 
-Just like it's no longer considered good web engineering to use inline styles exclusively, or have business logic &  database queries next to the display logic - it's no longer best practice to intermingle logic, display, & data storage.
+Just like it's no longer considered good web engineering to use inline styles exclusively, or have business logic &  database queries next to the display logic - it's no longer best practice to intermingle logic, display, & data storage. Separating these layers mean that they can be tested in isolation, making debugging and long term maintenance less of an issue.
 
 ## What's so special about D8?
 ### CMI
@@ -16,6 +16,7 @@ Just like it's no longer considered good web engineering to use inline styles ex
 #### Routing
 #### Config
 #### Templates - TWIG FTW!!!!
+
 ### Why use a framework?
 #### Focus on differentiation
 #### Development
