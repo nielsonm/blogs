@@ -31,13 +31,14 @@ A ton of work went into Drupal 8, especially the initiatives.  Too many to inclu
 
 ## Symfony - the framework *under* Drupal
 
-Part of the reason why Drupal 8 was such a major step forward architecturally came from the use of a web framework that simplified some of the long-in-the-tooth procedural code that formed the foundation of the Drupal request stack.  Symfony is an Objet-Oriented PHP component library that places a high emphasis on simplicity.  "Use only the parts that you need, nothing more", seems to conflict with the popular Drupal philosophy of including "Everything, including the kitchen sink". These two philosophies grow from a common root, one that places importance on extensibility.
+Part of the reason why Drupal 8 was such a major step forward architecturally came from the use of a web framework that simplified some of the long-in-the-tooth procedural code that formed the foundation of the Drupal request stack.  Symfony is an Objet-Oriented PHP component library that places a high emphasis on simplicity.  "Use only the parts that you need, nothing more", seems to conflict with the popular Drupal philosophy of including "Everything, including the kitchen sink". These two philosophies grow from a common root, one that places importance on extensibility.  Furthermore, a loosely coupled framework can focus on creating straightforward code, one that can be tested in isolation and maintained relatively easily.
 
 ### It's all about the Controller
 ### Routes, config, & template
 #### Routing
 #### Config
 #### Templates - TWIG FTW!!!!
+If I had to picture the most energized person to be theming in Drupal 8, that person would more than likely be MortenDK, of Geek Royale. As a regular on the DrupalCon Talk circuit and a former Drupal Association Board member, Morten has been involved with the Drupal community for as long as I've known him.  For the last several years, he has been tirelessly promoting the philosophy that what the Drupal front end needs is a revolution.  Who better to lead that revolution than a provocative, rabble-rousing creative type like Morten?  Twig was created as an alternative to phptemplate, the templating engine currently running D6&7 sites.  PhpTemplate failed in a number of ways, the first of which is requiring the use of PHP in the page template to render content sensibly.  In a world where front-end web developers may not be 100% comfortable writing PHP, that can be a hurdle.  Secondly, escaping output so that it won't act maliciously in the browser requires complicated escape functions, that may be invoked incorrectly.  Twig does all this for themers, and much more. Twig also creates template inheritance, meaning that templates can extend other templates, consolidating common functionality and shrinking the size of the theme code base.
 
 ### Why use a framework?
 #### Focus on differentiation
